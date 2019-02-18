@@ -7,7 +7,8 @@ ruby '2.6.0'
 gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.3.6"
-
+# jquery
+gem 'jquery-rails'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -30,7 +31,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+#semantic ui
+gem 'semantic-ui-sass'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
