@@ -1,6 +1,7 @@
-<h1>Editing User</h1>
 
-<%= render 'form', user: @user %>
+    <h1 class="">Editing User</h1>
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+    <%= render 'form', user: @user, :class => "ui large form" %>
+
+    <%= link_to 'Show', @user %> |
+    <%= link_to 'Back', users_path %>
