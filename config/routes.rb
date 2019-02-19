@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'chatroom#index'
   resources :users
   get 'signup', to: 'users#new', as: 'signup'
   resources :session, only: [:new, :create, :destroy]

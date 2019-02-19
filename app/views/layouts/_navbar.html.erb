@@ -10,9 +10,12 @@
       Friends
     </a>
     <% if current_user %>
-    <div class="item">
-      <%=link_to 'Log out', logout_path, method: :delete, :class => "ui primary button"%>
-    </div>
+      <div class='item' >
+        <p> Hello, <%= current_user.nick %> </p>
+      </div>
+      <div class="item">
+        <%=link_to 'Log out', logout_path, method: :delete, :class => "ui primary button"%>
+      </div>
     <% end %>
     <% if !current_user %>
       <div class="item">
