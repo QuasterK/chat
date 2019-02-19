@@ -8,6 +8,7 @@ class ChatroomController < ApplicationController
     message = Message.new(data: params[:data], user_id: current_user.id)
     if message.save
       ActionCable.server.broadcast "chatroom_channel",
+                                    nick: current_user.nick,
                                     msg: message.data,
                                     time: message.created_at
     end

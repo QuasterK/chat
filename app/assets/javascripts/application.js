@@ -14,5 +14,13 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
 //= require semantic-ui
+//= require_tree .
+
+const scroll = () => {
+    $('#messages').scrollTop($('#messages')[0].scrollHeight);
+}
+
+window.onload = function () {
+    scroll()
+};

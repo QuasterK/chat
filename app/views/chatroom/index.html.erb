@@ -3,9 +3,9 @@
   <div class="ui two column grid">
     <div class="twelve wide column">
       <div class="ui fluid card chat">
-        <div class="content">
+        <div id='messages' class="content overflow">
           <div class="ui comments" >
-            <div class='comment' id='messages' >
+            <div class='comment' >
               <% @messages.each do |msg| %>
                 <div class="content">
                   <a class="author"> <%= msg.user.nick %></a>
