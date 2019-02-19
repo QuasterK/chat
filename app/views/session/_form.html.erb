@@ -1,0 +1,20 @@
+<div class="ui large form">
+  <div class="ui stacked segment">
+    <%= form_with(url: login_new_path, local: true) do |form| %>
+      <div class="field">
+        <div class="ui left input">
+          <%=form.text_field :email, placeholder: "Email" %>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui left icon input">
+          <i class="lock icon"></i>
+          <%=form.text_field :password, placeholder: "Password" %>
+        </div>
+      </div>
+
+      <%= form.submit :class => "ui fluid large teal submit button"%>
+
+    <% end %>
+  </div>
+</div>
