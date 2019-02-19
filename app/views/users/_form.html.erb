@@ -1,3 +1,5 @@
+<div class="ui large form">
+  <div class="ui stacked segment">
 <%= form_with(model: user, local: true) do |form| %>
   <% if user.errors.any? %>
     <div id="error_explanation">
@@ -12,36 +14,46 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :nick %>
-    <%= form.text_field :nick %>
+    <div class="ui left icon input">
+      <i class="user icon"></i>
+      <%=form.text_field :nick, placeholder: "Nick" %>
+    </div>
   </div>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <div class="ui left input">
+      <%=form.text_field :name, placeholder: "Name" %>
+    </div>
   </div>
 
   <div class="field">
-    <%= form.label :surname %>
-    <%= form.text_field :surname %>
+    <div class="ui left input">
+      <%=form.text_field :surname, placeholder: "Surname" %>
+    </div>
   </div>
 
   <div class="field">
-    <%= form.label :password %>
-    <%= form.text_field :password %>
+    <div class="ui left icon input">
+      <i class="lock icon"></i>
+      <%=form.text_field :password, placeholder: "Password" %>
+    </div>
   </div>
 
   <div class="field">
-    <%= form.label :password_confirmation %>
-    <%= form.text_field :password_confirmation %>
+    <div class="ui left icon input">
+      <i class="lock icon"></i>
+      <%=form.text_field :password_confirmation, placeholder: "Confirm Password" %>
+    </div>
   </div>
 
   <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+    <div class="ui left input">
+      <%=form.text_field :email, placeholder: "Email" %>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <%= form.submit :class => "ui fluid large teal submit button"%>
+
 <% end %>
+  </div>
+</div>
