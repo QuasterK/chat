@@ -1,4 +1,6 @@
 class ChatroomController < ApplicationController
+  before_action :login_required
   def index
-  end  
+    @messages = Message.all
+  end
 end
