@@ -6,8 +6,11 @@ class ChatroomController < ApplicationController
 
   def create
     message = Message.new(data: params[:data], user_id: current_user.id)
-    message.save
-    redirect_to root_path
+    if message.save
+      ActionCable.server.broadcast "chatroom_channel",
+                                    msg: message.data,
+                                    time: message.created_at
+    end
   end
 
 end

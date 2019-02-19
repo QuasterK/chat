@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   get 'login', to: 'session#new', as: 'login'
   post 'login/new', to: 'session#create', as: 'login_new'
   delete 'logout', to: 'session#destroy'
+
+  # Serve websocket cable requests in-process
+  mount ActionCable.server => '/cable'
 end

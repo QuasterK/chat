@@ -4,8 +4,8 @@
     <div class="twelve wide column">
       <div class="ui fluid card chat">
         <div class="content">
-          <div class="ui comments">
-            <div class='comment'>
+          <div class="ui comments" >
+            <div class='comment' id='messages' >
               <% @messages.each do |msg| %>
                 <div class="content">
                   <a class="author"> <%= msg.user.nick %></a>
