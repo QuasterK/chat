@@ -17,11 +17,11 @@
 //= require semantic-ui
 //= require_tree .
 
-const scroll = () => {
+scroll = () => {
     $('#messages').scrollTop($('#messages')[0].scrollHeight);
 }
 
-const clear_form = () => {
+clear_form = () => {
       $('#data').val('');
 }
 window.onload = function () {
