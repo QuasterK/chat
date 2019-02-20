@@ -33,7 +33,7 @@
 
   </div>
   <div class="twelve wide column">
-      <%= form_with(url: create_message_path, :html => {class: 'ui fluid left corner labeled input'}) do |form|%>
+      <%= form_with(url: create_message_path, :html => {class: 'ui fluid left corner labeled input', id: 'message_input'}) do |form|%>
         <%=form.text_field :data, placeholder: "Type your message..." %>
         <div class="ui left corner label">
           <i class="asterisk icon"></i>

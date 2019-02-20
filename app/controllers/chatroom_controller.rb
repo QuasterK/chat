@@ -9,8 +9,7 @@ class ChatroomController < ApplicationController
     if message.save
       ActionCable.server.broadcast "chatroom_channel",
                                     nick: current_user.nick,
-                                    msg: message.data,
-                                    time: message.created_at
+                                    msg: message.data
     end
   end
 
