@@ -10,6 +10,6 @@ production: &production
   :url: redis://redistogo:69e60df416417ca19905a2505081d5b5@dory.redistogo.com:10370/
   :host: dory.redistogo.com
   :port: 10370
-  :password: 349f93483fv9erfv849dfv4892kascnj
+  :password: 8c6699099b915883b15c443faba861dd159a52470a7dbb531b3155828517b0a9234890aae5f430cc9d71d3279258e28b68f6a325f2236857cc3bbad1540fd14d
   :inline: true
   :timeout: 1
