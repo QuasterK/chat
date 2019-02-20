@@ -27,6 +27,11 @@
       <div class="ui fluid card chat">
         <div class="content">
           <p> Online: </p>
+          <% if @users %>
+            <% @users.each do |user| %>
+              <div><%= user.nick %> </div>
+            <% end %>
+          <% end %>
         </div>
       </div>
     </div>
