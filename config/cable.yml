@@ -7,9 +7,9 @@ development: &development
   :inline: true
 test: *development
 production: &production
-  :url: redis://h:p5f672d8b6ae389c3c6f023835d14550f8e999926b9a88c8a8c60f30e1f3f7b89@ec2-35-172-108-136.compute-1.amazonaws.com:6549
-  :host: ec2-35-172-108-136.compute-1.amazonaws.com
-  :port: 6549
-  :password: 349f93483fv9erfv849dfvdfbds9
+  :url: redis://redistogo:69e60df416417ca19905a2505081d5b5@dory.redistogo.com:10370/
+  :host: dory.redistogo.com
+  :port: 10370
+  :password: 349f93483fv9erfv849dfv4892kascnj
   :inline: true
   :timeout: 1
