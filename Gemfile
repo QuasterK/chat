@@ -5,8 +5,14 @@ ruby '2.6.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
+<<<<<<< HEAD
+=======
+
+>>>>>>> 27d0cb5ad56fb446579b3493e1d173fc3bb54568
 # jquery
 gem 'jquery-rails'
+#redis
+gem 'redis'  
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -54,7 +60,11 @@ group :development do
 end
 
 group :production do
+<<<<<<< HEAD
   gem 'pg', '~> 0.18.4'
+=======
+    gem 'pg', '~> 0.18.4'
+>>>>>>> 27d0cb5ad56fb446579b3493e1d173fc3bb54568
 end
 
 group :test do
