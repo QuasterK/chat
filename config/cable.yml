@@ -1,10 +1,15 @@
-development:
-  adapter: async
 
-test:
-  adapter: async
-
-production:
-  adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: chat_production
+development: &development
+  :url: redis://localhost:6379
+  :host: localhost
+  :port: 6379
+  :timeout: 1
+  :inline: true
+test: *development
+production: &production
+  :url:     redis://h:p5f672d8b6ae389c3c6f023835d14550f8e999926b9a88c8a8c60f30e1f3f7b89@ec2-35-172-108-136.compute-1.amazonaws.com:6549
+  :host: tarpon.redistogo.com
+  :port: 49382
+  :password: 349f93483fv9erfv849dfvdfbds9
+  :inline: true
+  :timeout: 1
