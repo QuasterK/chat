@@ -3,8 +3,6 @@ class ChatroomController < ApplicationController
   def index
     @messages = Message.all
     @users = User.where(status: true).all
-    p @users
-    p '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
   end
 
   def create

@@ -8,7 +8,13 @@
             <div class='comment' >
               <% @messages.each do |msg| %>
                 <div class="content">
-                  <a class="author"> <%= msg.user.nick %></a>
+                  <a class="author">
+                    <%if msg.user %>
+                      <%= msg.user.nick %>
+                    <% else %>
+                      anonymous 
+                    <% end %>
+                    </a>
                 </div>
                 <div class="text">
                   <%= msg.data %>

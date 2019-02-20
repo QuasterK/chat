@@ -1,7 +1,9 @@
-
-    <h1 class="">Editing User</h1>
-
-    <%= render 'form', user: @user, :class => "ui large form" %>
-
-    <%= link_to 'Show', @user %> |
-    <%= link_to 'Back', users_path %>
+<div class='login'>
+  <div class="ui middle aligned center aligned grid">
+    <div class="column">
+      <h1 class='ui teal image header'>Edit your profile</h1>
+      <%= render 'form', user: @user, :class => "ui large form" %>
+      <%= link_to 'Delete your account', user_path(current_user.id), method: :delete, :class => "ui fluid large red submit button", data: {confirm: "Are you sure? :("}  %>
+    </div>  
+  </div>
+</div>
