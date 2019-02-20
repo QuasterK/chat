@@ -5,10 +5,6 @@ ruby '2.6.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
-<<<<<<< HEAD
-=======
-
->>>>>>> 27d0cb5ad56fb446579b3493e1d173fc3bb54568
 # jquery
 gem 'jquery-rails'
 #redis
