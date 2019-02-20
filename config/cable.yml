@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 27d0cb5ad56fb446579b3493e1d173fc3bb54568
 development: &development
   :url: redis://localhost:6379
   :host: localhost
@@ -10,14 +6,9 @@ development: &development
   :inline: true
 test: *development
 production: &production
-<<<<<<< HEAD
   :url:     redis://h:pf2410fed8b0660f89cc97396270aa6a3bf5aaa04cd216a266e4cd8508f189cdd@ec2-3-208-33-137.compute-1.amazonaws.com:26249
   :host: ec2-3-208-33-137.compute-1.amazonaws.com
   :port: 26249
   :password: ed943ca5dbab3448f56c2e694ce9181e02ac1e1a312cc0086088372800ca388f0fa92aa351d011a01fd2d746d1d31c00cdc48143769551675ad1883730a8a85f
   :inline: true
   :timeout: 1
-=======
-  adapter: redis
-  url: redis://redistogo:1b45d2c9d0f111c93147affd3d2730e5@dory.redistogo.com:10575/
->>>>>>> 27d0cb5ad56fb446579b3493e1d173fc3bb54568
