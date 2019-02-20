@@ -7,3 +7,5 @@ development: &development
   :inline: true
 test: *development
 production: &production
+  adapter: redis
+  url: redis://redistogo:1b45d2c9d0f111c93147affd3d2730e5@dory.redistogo.com:10575/

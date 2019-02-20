@@ -93,5 +93,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.middleware.use ChatActionCable
-  config.web_socket_server_url = "https://my-chatty-app.herokuapp.com/"
+  config.web_socket_server_url = "wss://my-chatty-app.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://my-chatty-app.herokuapp.com', 'http://my-chatty-app.herokuapp.com']
+
 end
