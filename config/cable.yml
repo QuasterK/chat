@@ -3,4 +3,4 @@ development: &development
 test: *development
 production: &production
   adapter: redis
-  url: redis://localhost:6379/1
+  url: redis://redistogo:4f4cee85103b97c7aef4009261279bd0@spinyfin.redistogo.com:10845/
