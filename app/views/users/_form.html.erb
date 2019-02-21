@@ -1,57 +1,56 @@
 <div class="ui large form">
   <div class="ui stacked segment">
-    <% if user.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-        <ul>
-        <% user.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-        </ul>
+    <%= form_with(model: user, local: true) do |form| %>
+
+      <div class="field">
+        <div class="ui left icon input">
+          <i class="user icon"></i>
+          <%=form.text_field :nick, placeholder: "Nick" %>
+        </div>
       </div>
+
+      <div class="field">
+        <div class="ui left input">
+          <%=form.text_field :name, placeholder: "Name" %>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="ui left input">
+          <%=form.text_field :surname, placeholder: "Surname" %>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="ui left icon input">
+          <i class="lock icon"></i>
+          <%=form.text_field :password, placeholder: "Password" %>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="ui left icon input">
+          <i class="lock icon"></i>
+          <%=form.text_field :password_confirmation, placeholder: "Confirm Password" %>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="ui left input">
+          <%=form.text_field :email, placeholder: "Email" %>
+        </div>
+      </div>
+
+      <% if user.errors.any? %>
+        <div class='errors'>
+          <% user.errors.full_messages.each do |message| %>
+            <div><%= message %></div>
+          <% end %>
+        </div>
+      <% end %>
+
+      <%= form.submit :class => "ui fluid large teal submit button"%>
+
     <% end %>
-<%= form_with(model: user, local: true) do |form| %>
-  <div class="field">
-    <div class="ui left icon input">
-      <i class="user icon"></i>
-      <%=form.text_field :nick, placeholder: "Nick" %>
-    </div>
-  </div>
-
-  <div class="field">
-    <div class="ui left input">
-      <%=form.text_field :name, placeholder: "Name" %>
-    </div>
-  </div>
-
-  <div class="field">
-    <div class="ui left input">
-      <%=form.text_field :surname, placeholder: "Surname" %>
-    </div>
-  </div>
-
-  <div class="field">
-    <div class="ui left icon input">
-      <i class="lock icon"></i>
-      <%=form.text_field :password, placeholder: "Password" %>
-    </div>
-  </div>
-
-  <div class="field">
-    <div class="ui left icon input">
-      <i class="lock icon"></i>
-      <%=form.text_field :password_confirmation, placeholder: "Confirm Password" %>
-    </div>
-  </div>
-
-  <div class="field">
-    <div class="ui left input">
-      <%=form.text_field :email, placeholder: "Email" %>
-    </div>
-  </div>
-
-  <%= form.submit :class => "ui fluid large teal submit button"%>
-
-<% end %>
   </div>
 </div>

@@ -7,7 +7,8 @@ ruby '2.6.0'
 gem 'rails', '~> 5.2.2'
 # jquery
 gem 'jquery-rails'
-
+# particles js
+gem 'particles-js-rails', '~> 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets

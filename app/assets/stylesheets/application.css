@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+ #particles-js {
+   background-color: #961e27;
+   background-size: cover;
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: calc(100vh - 64px);
+ }
+
+.fixed_border{
+  margin-bottom: 0 !important;
+}
