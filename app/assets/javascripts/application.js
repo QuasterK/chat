@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require semantic-ui
 //= require_tree .
+//= require_tree ./channels
 
 scroll = () => {
     $('#messages').scrollTop($('#messages')[0].scrollHeight);
